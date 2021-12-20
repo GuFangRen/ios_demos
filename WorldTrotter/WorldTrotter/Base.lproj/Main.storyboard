@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -86,7 +85,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="906.15384615384608" y="60.426540284360186"/>
+            <point key="canvasLocation" x="1754" y="60"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="vWX-z7-Cdv">
@@ -101,22 +100,27 @@
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="gFu-po-jUZ"/>
                         <segue destination="2SF-nE-39Y" kind="relationship" relationship="viewControllers" id="VrG-fL-RYL"/>
+                        <segue destination="i6Y-vo-WAU" kind="relationship" relationship="viewControllers" id="kmB-Z0-58a"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9DK-Z4-KDl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1683.0769230769231" y="60.426540284360186"/>
+            <point key="canvasLocation" x="963" y="60"/>
+        </scene>
+        <!--Web-->
+        <scene sceneID="kUE-4T-pzA">
+            <objects>
+                <viewController id="i6Y-vo-WAU" customClass="WebViewController" customModule="WorldTrotter" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Web" id="Q6T-2O-S01"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bLy-Ov-I4R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3208" y="60"/>
         </scene>
         <!--Map-->
         <scene sceneID="hwp-hE-TM6">
             <objects>
                 <viewController id="2SF-nE-39Y" customClass="MapViewController" customModule="WorldTrotter" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Xy1-TD-7nv">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="V3C-xA-6rb"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
                     <tabBarItem key="tabBarItem" title="Map" image="MapIcon" id="qgH-Zc-FEy"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0wf-jk-6yV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -127,8 +131,5 @@
     <resources>
         <image name="ConvertionViewAsset" width="48.333332061767578" height="32.333332061767578"/>
         <image name="MapIcon" width="48.333332061767578" height="32.333332061767578"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>
