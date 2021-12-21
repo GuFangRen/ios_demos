@@ -9,7 +9,8 @@ import UIKit
 import WebKit
 class WebViewController: UIViewController,WKUIDelegate
 {
-    var webView:WKWebView!
+    var webView:WKWebView!//每次用都要解包太麻烦，干脆声明成隐式接包的。默认初始值会被赋值为nil，
+                          //后面要自己确定赋值时机
     override func loadView() {
         let webConfiguration = WKWebViewConfiguration()
         webView = WKWebView(frame: .zero, configuration: webConfiguration)
